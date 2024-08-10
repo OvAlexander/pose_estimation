@@ -167,3 +167,4 @@ Scripts/
 share/
 pyvenv.cfg
 .vscode/
+pose_landmarker_lite.task
