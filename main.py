@@ -5,6 +5,7 @@ from mediapipe import solutions
 from mediapipe.framework.formats import landmark_pb2
 import cv2 as cv
 import numpy as np
+from source import fetch
 
 model_path = r'C:\\Users\\alexo\Documents\\projects\\pose_estimation\\pose_landmarker_lite.task'
 BaseOptions = python.BaseOptions(model_asset_path=model_path)
@@ -39,7 +40,10 @@ def draw_landmarks_on_image(rgb_image, detection_result):
 
 
 if __name__ == '__main__':
-    video = cv.VideoCapture(0)
+    uid = "PHp3wWbR9cw"
+    mv = f"./mv_videos/{uid}.mp4"
+    fetch(uid)
+    video = cv.VideoCapture(mv)
 
     frame_timestamp_ms = video.get(cv.CAP_PROP_POS_MSEC)
     calc_timestamps = [0.0]
