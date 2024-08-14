@@ -170,3 +170,6 @@ pyvenv.cfg
 pose_landmarker_lite.task
 etc/
 mv_videos/
+torchhub/
+depth_videos/
+
