@@ -40,7 +40,7 @@ def draw_landmarks_on_image(rgb_image, detection_result):
 
 
 if __name__ == '__main__':
-    uid = "PHp3wWbR9cw"
+    uid = "Rzr_XSqptl4"
     mv = f"./mv_videos/{uid}.mp4"
     fetch(uid)
     video = cv.VideoCapture(mv)
